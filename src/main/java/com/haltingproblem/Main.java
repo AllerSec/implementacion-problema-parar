@@ -21,10 +21,10 @@ public class Main {
         Reverser reverser1 = new Reverser(haltingProgram);
         Reverser reverser2 = new Reverser(nonHaltingProgram);
 
-        System.out.println("Probando Reverser con HaltingProgram:");
-        reverser1.run();
-
         System.out.println("\nProbando Reverser con NonHaltingProgram:");
         reverser2.run();
+
+        System.out.println("Probando Reverser con HaltingProgram:");
+        reverser1.run();
     }
 }
