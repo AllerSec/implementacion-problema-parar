@@ -12,18 +12,12 @@ public class Reverser extends Program {
 
     @Override
     public void run() {
-        if(HaltChecker.willHalt(program)) {
-            // Entrar en bucle infinito
-            while(true) {
-                System.out.println("Looping...");
+        if (HaltChecker.willHalt(program)) {
+            while (true) {
+                System.out.println("Reverser entra en bucle...");
             }
         } else {
-            System.out.println("Stopping immediately");
+            System.out.println("Reverser se detiene inmediatamente.");
         }
-    }
-
-    @Override
-    public ProgramPrototype clone() {
-        return new Reverser((Program) program.clone());
     }
 }
