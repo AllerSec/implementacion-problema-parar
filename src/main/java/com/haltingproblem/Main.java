@@ -25,7 +25,7 @@ public class Main {
         Reverser reverser1 = new Reverser(haltingProgram);
         Reverser reverser2 = new Reverser(nonHaltingProgram);
 
-        reverser1.run(); // Debería entrar en bucle infinito
-        reverser2.run(); // Debería detenerse
+        reverser2.run();
+        reverser1.run();
     }
 }
