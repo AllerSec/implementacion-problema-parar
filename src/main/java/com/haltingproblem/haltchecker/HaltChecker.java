@@ -1,5 +1,6 @@
 package com.haltingproblem.haltchecker;
 
+import com.haltingproblem.model.HaltingProgram;
 import com.haltingproblem.model.Program;
 
 public class HaltChecker {

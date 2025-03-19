@@ -2,6 +2,7 @@ package com.haltingproblem.reverser;
 
 import com.haltingproblem.haltchecker.HaltChecker;
 import com.haltingproblem.model.Program;
+import com.haltingproblem.prototype.ProgramPrototype;
 
 public class Reverser extends Program {
     private Program program;

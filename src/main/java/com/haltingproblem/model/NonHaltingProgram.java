@@ -1,5 +1,7 @@
 package com.haltingproblem.model;
 
+import com.haltingproblem.prototype.ProgramPrototype;
+
 public class NonHaltingProgram extends Program {
     @Override
     public void run() {
