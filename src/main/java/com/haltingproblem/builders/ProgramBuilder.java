@@ -1,4 +1,7 @@
 package com.haltingproblem.builders;
 
-public class ProgramBuilder {
+public interface ProgramBuilder {
+    ProgramBuilder setInitialValue(int value);
+    ProgramBuilder setHalting(boolean halting);
+    Program build();
 }
