@@ -1,4 +1,4 @@
-package org.example;
+package com.haltingproblem;
 
 public class Main {
     public static void main(String[] args) {
