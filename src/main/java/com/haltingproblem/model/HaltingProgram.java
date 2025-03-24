@@ -2,7 +2,7 @@ package com.haltingproblem.model;
 
 public class HaltingProgram extends Program {
     @Override
-    public void run() {
+    public void runProgram() {
         int num = initialValue;
         while (num > 0) {
             System.out.println(num);
