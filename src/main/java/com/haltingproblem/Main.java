@@ -25,7 +25,7 @@ public class Main {
         Reverser reverser1 = new Reverser(haltingProgram);
         Reverser reverser2 = new Reverser(nonHaltingProgram);
 
-        reverser2.run();
-        reverser1.run();
+        reverser2.runProgram();
+        reverser1.runProgram();
     }
 }

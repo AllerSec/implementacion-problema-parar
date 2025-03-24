@@ -11,7 +11,7 @@ public class Reverser extends Program {
     }
 
     @Override
-    public void run() {
+    public void runProgram() {
         if (HaltChecker.willHalt(program)) {
             while (true) {
                 System.out.println("Reverser entra en bucle...");
