@@ -7,5 +7,5 @@ public abstract class Program {
         this.initialValue = value;
     }
 
-    public abstract void run();
+    public abstract void runProgram();
 }
