@@ -24,9 +24,9 @@ public class Main {
         Reverser reverser2 = new Reverser(nonHaltingClone);
 
         System.out.println("Probando clon de HaltingProgram:");
-        reverser1.run(); // Bucle infinito
+        reverser1.runProgram(); // Bucle infinito
 
         System.out.println("\nProbando clon de NonHaltingProgram:");
-        reverser2.run(); // Se detiene
+        reverser2.runProgram(); // Se detiene
     }
 }

@@ -4,11 +4,10 @@ import com.haltingproblem.prototype.ProgramPrototype;
 
 public class NonHaltingProgram extends Program {
     @Override
-    public void run() {
-        int num = initialValue;
+    public void runProgram() {
         while(true) {
-            System.out.println(num);
-            num++;
+            System.out.println(currentValue);
+            currentValue++;
         }
     }
 

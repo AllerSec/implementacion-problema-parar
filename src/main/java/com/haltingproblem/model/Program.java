@@ -5,12 +5,21 @@ import com.haltingproblem.prototype.ProgramPrototype;
 
 public abstract class Program implements ProgramPrototype {
     protected int initialValue;
-
+    protected int currentValue;
     public void setInitialValue(int value) {
         this.initialValue = value;
+        this.currentValue = value;
     }
 
-    public abstract void run();
+    public int getCurrentValue() {
+        return currentValue;
+    }
+
+    public int getInitialValue() {
+        return initialValue;
+    }
+
+    public abstract void runProgram();
 
     @Override
     public ProgramPrototype clone() {

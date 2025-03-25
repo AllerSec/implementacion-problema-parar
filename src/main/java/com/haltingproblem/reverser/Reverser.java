@@ -12,7 +12,7 @@ public class Reverser extends Program {
     }
 
     @Override
-    public void run() {
+    public void runProgram() {
         if(HaltChecker.willHalt(program)) {
             // Entrar en bucle infinito
             while(true) {
