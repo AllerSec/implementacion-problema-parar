@@ -2,8 +2,7 @@ package com.haltingproblem.builders;
 
 import com.haltingproblem.model.Program;
 
-public interface ProgramBuilder {
-    ProgramBuilder setInitialValue(int value);
-    ProgramBuilder setHalting(boolean halting);
-    Program build();
+public interface ProgramBuilder<T extends Program> {
+    ProgramBuilder<T> setInitialValue(int value);
+    T build();
 }

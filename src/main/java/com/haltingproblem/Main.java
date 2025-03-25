@@ -1,23 +1,20 @@
 package com.haltingproblem;
 
-import com.haltingproblem.builders.ProgramBuilderImpl;
+import com.haltingproblem.builders.HaltingProgramBuilder;
+import com.haltingproblem.builders.NonHaltingProgramBuilder;
 import com.haltingproblem.model.Program;
 import com.haltingproblem.reverser.Reverser;
 
 public class Main {
     public static void main(String[] args) {
-        ProgramBuilderImpl builder = new ProgramBuilderImpl();
-
         // Construir un programa que SÍ termina
-        Program haltingProgram = builder
+        Program haltingProgram = new HaltingProgramBuilder()
             .setInitialValue(3)
-            .setHalting(true)
             .build();
 
         // Construir un programa que NO termina
-        Program nonHaltingProgram = builder
+        Program nonHaltingProgram = new NonHaltingProgramBuilder()
             .setInitialValue(0)
-            .setHalting(false)
             .build();
 
         // Simular el Problema de la Parada
